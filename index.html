@@ -12,13 +12,59 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
+    <main>
+      <article class="card">
+        <figure>
+          <img src="./images/drawers.jpg" alt="" class="article-image" />
+        </figure>
+        <section class="content">
+          <header>
+            <h1 class="heading bold">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+          </header>
+          <p class="light">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <footer>
+            <div class="author">
+              <figure>
+                <img
+                  src="./images/avatar-michelle.jpg"
+                  alt="avatar"
+                  class="avatar"
+                />
+              </figure>
+              <div class="author-info">
+                <p class="author-name bold">Michelle Appleton</p>
+                <p class="article-date light">28 Jun 2020</p>
+              </div>
+            </div>
+            <figure>
+              <img
+                src="./images/icon-share.svg"
+                alt="share icon"
+                class="share-icon"
+              />
+            </figure>
+          </footer>
+        </section>
+      </article>
+    </main>
   </body>
 </html>

@@ -66,10 +66,12 @@ body {
 
 main {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  overflow: hidden;
 }
 
 .card {
@@ -192,7 +194,6 @@ button.share-icon:focus {
 @media only screen and (max-width: 768px) {
   main {
     display: flex;
-    padding: 1rem;
   }
   .card {
     flex-direction: column;
@@ -201,5 +202,33 @@ button.share-icon:focus {
 
   .article-image {
     border-radius: 1rem 1rem 0 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    overflow: hidden;
+  }
+
+  .tooltip .tooltip-content {
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
+    width: 29em;
+    border-radius: 0 0 1rem 1rem;
+    transform: translateX(-90%);
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .tooltip.active .tooltip-content {
+    display: flex;
+    justify-content: end;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .tooltip-content::after {
+    display: none;
   }
 }

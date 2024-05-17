@@ -188,3 +188,18 @@ footer {
 button.share-icon:focus {
   outline: none;
 }
+
+@media only screen and (max-width: 768px) {
+  main {
+    display: flex;
+    padding: 1rem;
+  }
+  .card {
+    flex-direction: column;
+    max-width: 30rem;
+  }
+
+  .article-image {
+    border-radius: 1rem 1rem 0 0;
+  }
+}
